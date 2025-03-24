@@ -1,0 +1,245 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos del encabezado */
+header {
+    display: flex; /*flex*/
+    justify-content: space-between; /* Distribuye los elementos a los extremos  */
+    align-items: center; /* Alinea verticalmente los elementos */
+    padding: 10px 20px; 
+    background-image: linear-gradient(to bottom,rgb(48, 122, 172),black);
+    position: relative;
+}
+
+header h1 {
+    font-size: 50px;
+    flex-grow: 1; /* Hace que el título ocupe el espacio disponible */
+    text-align: center;
+    color: blanchedalmond;
+    
+}
+
+header p {
+    margin: 0;
+    position: absolute;
+}
+
+header p:first-child {
+    left: 20px;
+}
+
+header p:last-child {
+    right: 20px;
+}
+
+header svg {
+    width: 30px; 
+    height: 30px; 
+    stroke: black; /* Color del icono */
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    font-family: Comic Sans MS, sans-serif;
+    color: black;
+}
+
+/* Títulos */
+.titulo2 {
+    text-align: center;
+    font-size: 30px;
+    color: aliceblue;
+}
+
+.titulo3 {
+    text-align: center;
+    font-size: 15px;
+    color: black;
+}
+
+
+.contenedor {
+    width: 100%;
+    max-width: 110rem;
+    margin: 0 auto;
+}
+
+
+.nv-bg { /* barra oscura */
+    background-color: rgb(35, 56, 70);
+    width: 100%;
+    text-align: center;
+}
+
+.navegacion1 {
+    display: flex; /* Flex*/
+    justify-content: space-between; /* Da espacio entre los elementos */
+    gap: 30px; 
+}
+
+.navegacion1 a { 
+    color: white;
+    font-size: 2rem; 
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.navegacion1 a:hover { /* Color clarito*/
+    background-color: rgb(74, 131, 160);
+}
+
+
+.porta {
+    position: relative;
+    width: 100%;
+    height: 50vh; 
+    overflow: hidden;
+}
+
+.porta img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contenido-porta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white; 
+    background: rgba(0, 0, 0, 0.5); 
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.contenido-porta h2, .contenido-porta h3 {
+    margin: 0; 
+    color: white; 
+}
+
+.contenido-porta a {
+    display: inline-block;
+    background: rgb(74, 131, 160);
+    color: white;
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    text-decoration: none;
+    font-size: 1.6rem;
+    border-radius: 5px;
+}
+
+.contenido-porta a:hover {
+    background: rgb(35, 56, 70);
+}
+
+/* Contenedor de frutas */
+.contenedor-frutas {
+    display: flex; /*  Flex */
+    gap: 20px; 
+    align-items: stretch; /* Hace que todos los elementos tengan la misma altura */
+    margin-bottom: 40px;
+}
+
+.contenedor-frutas img {
+    width: 45%; 
+    height: auto; 
+}
+
+.mensaje-bienvenida {
+    background-image: linear-gradient(to bottom, rgb(6, 92, 150), black);
+    color: white;
+    font-size: 2rem;
+    padding: 20px; 
+    display: flex; /* Se utiliza Flexbox para centrar el contenido dentro del contenedor */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    height: 100%; 
+    width: 45%; 
+    border-radius: 10px; 
+    margin-top: 20px; 
+    padding-left: 20px; 
+    padding-right: 20px;
+}
+
+
+.frases {
+    background-color: rgb(35, 56, 70);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    background-image: linear-gradient(to bottom, black,rgb(6, 92, 150));
+    font-size: 110;
+}
+
+
+form {
+    display: flex; /* Flexbox  */
+    align-items: center;
+    gap: 10px; /* */
+    flex-wrap: nowrap; /* No permite que los elementos se envuelvan en una nueva línea */
+    margin-top: 20px;
+    background-image: linear-gradient(to bottom, rgb(6, 92, 150), black);
+    padding: 20px; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    color: blanchedalmond;
+}
+
+form label {
+    font-size: 1.4rem;
+    margin-right: 5px; 
+}
+
+form input, form textarea {
+    padding: 10px;
+    font-size: 1.4rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 150px;
+}
+
+form textarea {
+    width: 200px;
+    height: 100px;
+}
+
+form input[type="submit"] {
+    background-color:rgb(0, 45, 68);
+
+    color: white;
+    padding: 1rem;
+    border: none;
+    font-size: 1.6rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    color: white;
+
+}
+
+form input[type="submit"]:hover {
+    background-color: black; 
+    color: white;
+}
