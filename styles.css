@@ -16,15 +16,16 @@ html {
 
 body {
     font-family: Arial, sans-serif;
+    
 }
 
 /* Estilos del encabezado */
 header {
-    display: flex; /*flex*/
-    justify-content: space-between; /* Distribuye los elementos a los extremos  */
-    align-items: center; /* Alinea verticalmente los elementos */
+    display: flex; /Se aplica FlexBo/
+    justify-content: space-between; /* Distribuye los elementos */
+    align-items: center; 
     padding: 10px 20px; 
-    background-image: linear-gradient(to bottom,rgb(48, 122, 172),black);
+    background-color: #f8f8f8; 
     position: relative;
 }
 
@@ -32,8 +33,6 @@ header h1 {
     font-size: 50px;
     flex-grow: 1; /* Hace que el título ocupe el espacio disponible */
     text-align: center;
-    color: blanchedalmond;
-    
 }
 
 header p {
@@ -75,14 +74,14 @@ h1 {
     color: black;
 }
 
-
+/* Contenedor */
 .contenedor {
     width: 100%;
     max-width: 110rem;
     margin: 0 auto;
 }
 
-
+/* Barra de navegación */
 .nv-bg { /* barra oscura */
     background-color: rgb(35, 56, 70);
     width: 100%;
@@ -90,12 +89,12 @@ h1 {
 }
 
 .navegacion1 {
-    display: flex; /* Flex*/
-    justify-content: space-between; /* Da espacio entre los elementos */
-    gap: 30px; 
+    display: flex; /* Aplicacion de flexbox */
+    justify-content: space-between; /* Flex propiedades  */
+    gap: 30px; /* Espacio entre los enlaces */
 }
 
-.navegacion1 a { 
+.navegacion1 a { /* Estilo de los enlaces */
     color: white;
     font-size: 2rem; 
     text-decoration: none;
@@ -106,7 +105,7 @@ h1 {
     background-color: rgb(74, 131, 160);
 }
 
-
+/* Sección de portada */
 .porta {
     position: relative;
     width: 100%;
@@ -126,7 +125,7 @@ h1 {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: white; 
+    color: white; /* Texto blanco */
     background: rgba(0, 0, 0, 0.5); 
     padding: 2rem;
     border-radius: 10px;
@@ -150,96 +149,4 @@ h1 {
 
 .contenido-porta a:hover {
     background: rgb(35, 56, 70);
-}
-
-/* Contenedor de frutas */
-.contenedor-frutas {
-    display: flex; /*  Flex */
-    gap: 20px; 
-    align-items: stretch; /* Hace que todos los elementos tengan la misma altura */
-    margin-bottom: 40px;
-}
-
-.contenedor-frutas img {
-    width: 45%; 
-    height: auto; 
-}
-
-.mensaje-bienvenida {
-    background-image: linear-gradient(to bottom, rgb(6, 92, 150), black);
-    color: white;
-    font-size: 2rem;
-    padding: 20px; 
-    display: flex; /* Se utiliza Flexbox para centrar el contenido dentro del contenedor */
-    align-items: center; /* Centra verticalmente */
-    justify-content: center; /* Centra horizontalmente */
-    height: 100%; 
-    width: 45%; 
-    border-radius: 10px; 
-    margin-top: 20px; 
-    padding-left: 20px; 
-    padding-right: 20px;
-}
-
-
-.frases {
-    background-color: rgb(35, 56, 70);
-    color: white;
-    padding: 20px;
-    text-align: center;
-    background-image: linear-gradient(to bottom, black,rgb(6, 92, 150));
-    font-size: 110;
-}
-
-
-form {
-    display: flex; /* Flexbox  */
-    align-items: center;
-    gap: 10px; /* */
-    flex-wrap: nowrap; /* No permite que los elementos se envuelvan en una nueva línea */
-    margin-top: 20px;
-    background-image: linear-gradient(to bottom, rgb(6, 92, 150), black);
-    padding: 20px; 
-    border-radius: 8px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    color: blanchedalmond;
-}
-
-form label {
-    font-size: 1.4rem;
-    margin-right: 5px; 
-}
-
-form input, form textarea {
-    padding: 10px;
-    font-size: 1.4rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 150px;
-}
-
-form textarea {
-    width: 200px;
-    height: 100px;
-}
-
-form input[type="submit"] {
-    background-color:rgb(0, 45, 68);
-
-    color: white;
-    padding: 1rem;
-    border: none;
-    font-size: 1.6rem;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-form input[type="submit"]:hover {
-    color: white;
-
-}
-
-form input[type="submit"]:hover {
-    background-color: black; 
-    color: white;
 }
