@@ -1,0 +1,23 @@
+#recuadro1 {
+    background-image: url("foto1.jpg");
+    color:#f00;
+    width:700px;
+    height:450px;
+    border-radius:15px;
+    font-size:45px;
+    }
+    .texto1 {
+    color:rgb(255,255,0);
+    }
+#recuadro2 {
+    background-image: url("foto1.jpg");
+    color:#f00;
+    width:700px;
+    height:450px;
+    border-radius:15px;
+    font-size:45px;
+    margin-top:10px;
+    }
+    .texto2 {
+    color:rgba(255,255,0,0.5);
+    }
